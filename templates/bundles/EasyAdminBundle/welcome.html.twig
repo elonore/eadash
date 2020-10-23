@@ -3,5 +3,20 @@
 {% block page_title %} Dashboard {% endblock %}
 
 {% block content %}
- <p>Admin</p>
+    <div class="container">
+        <div class="row">
+            <h1>Tableau de bord</h1>
+        </div>
+        <div class="row">
+            <div class="col-4 alert-info">
+                <span class="display-3 "> {{countAllUser[0]['value']}} </span> Utilisateurs
+            </div>
+            <div class="col-4 alert-success">
+                <span class="display-3 "> {{countAllWine[0]['value']}} </span> Vins
+            </div>
+            <div class="col-4 alert-primary">
+                <span class="display-3 "> {{countAllPays[0]['value']}} </span> Pays
+            </div>
+        </div>
+    </div>
 {% endblock content %}
